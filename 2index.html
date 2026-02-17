@@ -1,68 +1,96 @@
+To match the layout in your screenshot while applying your specific branding (Daisy Truong, pink background, black text), I have updated the CSS to center-align the elements and style the navigation bar to look like the one in your image.
+
+I used a slightly deeper pink for the navigation bar to create the same "banded" effect seen in your reference photo.
+
+HTML
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Daisy Truong | My First Webpage</title>
     <style>
-        /* Modern, clean font stack */
+        /* General Styles */
         body {
-            background-color: #ffdae9; /* Light pink */
-            color: #000000;            /* Black text */
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.6;
+            background-color: #ffdae9; /* Light Pink */
+            color: #000000;            /* Black Text */
+            font-family: "Arial Black", Gadget, sans-serif; /* Bold font like the image */
             margin: 0;
-            padding: 20px;
+            padding: 0;
+            text-align: center;        /* Centers everything like the screenshot */
         }
 
         #container {
-            max-width: 800px;
+            width: 100%;
             margin: 0 auto;
-            background: rgba(255, 255, 255, 0.2); /* Subtle contrast boost */
-            padding: 40px;
-            border-radius: 10px;
         }
 
+        /* Header Styling */
         header {
-            border-bottom: 2px solid #000;
-            margin-bottom: 20px;
-            padding-bottom: 10px;
+            padding: 40px 0 20px 0;
+        }
+
+        h1.headings {
+            font-size: 4rem;           /* Large name like image */
+            margin: 0;
+            letter-spacing: -2px;
+        }
+
+        h2.headings {
+            font-size: 2rem;
+            margin-top: 10px;
+        }
+
+        /* Navigation Bar Styling */
+        nav {
+            background-color: #f48fb1; /* Slightly darker pink for the bar */
+            padding: 15px 0;
+            margin: 30px 0;
         }
 
         nav ul {
             list-style: none;
             padding: 0;
+            margin: 0;
             display: flex;
-            gap: 20px;
+            justify-content: center;
+            gap: 40px;
         }
 
-        nav ul li {
-            font-weight: bold;
-            text-decoration: underline;
+        nav li {
+            font-family: "Times New Roman", Times, serif; /* Matches the serif nav font in image */
+            font-size: 1.5rem;
+            font-weight: normal;
             cursor: pointer;
         }
 
+        /* Article Styling */
         article {
-            margin-top: 40px;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
         }
 
         img {
             max-width: 100%;
             height: auto;
-            border-radius: 8px;
-            margin: 10px 0;
-            border: 1px solid #000;
+            display: block;
+            margin: 20px auto;
+        }
+
+        p {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.1rem;
+            line-height: 1.5;
+            text-align: left; /* Keeps text readable while headings are centered */
+            margin-bottom: 20px;
         }
 
         .quote {
             font-style: italic;
-            border-left: 4px solid #000;
-            padding-left: 15px;
-            margin: 20px 0;
-        }
-
-        .headings {
-            margin: 10px 0;
+            font-weight: bold;
+            border-left: 5px solid black;
+            padding-left: 20px;
         }
     </style>
 </head>
@@ -72,7 +100,7 @@
             <h1 class="headings">Daisy Truong</h1>
             <h2 class="headings">My first web page</h2>
         </header>
-        
+
         <nav>
             <ul>
                 <li>Home</li>
@@ -85,17 +113,9 @@
         <article>
             <h2 class="headings">Photos from my last vacation</h2>
             <img src="https://media.journalism.berkeley.edu/upload/2020/07/1596052538772cb8d.jpg" alt="Flower">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <p class="quote">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <p class="quote">"This is a highlighted quote from my travels, adding a bit of personality to the layout."</p>
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </article>
-
-        <article>
-            <h2 class="headings">More adventures</h2>
-            <img id="flower" src="https://media.journalism.berkeley.edu/upload/2020/07/1596052538772cb8d.jpg" alt="Flower">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <p class="quote">Another memory captured in time.</p>
-            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </article>
     </div>
 </body>
