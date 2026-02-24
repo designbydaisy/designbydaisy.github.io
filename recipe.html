@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lara Jean's Cherry Turnovers</title>
+    <style>
+        /* 1.  */
+        html {
+            --s: 57px; /**/
+            --c1: #f2b4a8;
+            --c2: #91204d;
+            
+            --_g: radial-gradient(25% 25% at 25% 25%,var(--c1) 99%,#0000 101%);
+            background:
+                var(--_g) var(--s) var(--s)/calc(2*var(--s)) calc(2*var(--s)),
+                var(--_g) 0 0/calc(2*var(--s)) calc(2*var(--s)),
+                radial-gradient(50% 50%,var(--c2) 98%,#0000) 0 0/var(--s) var(--s),
+                repeating-conic-gradient(var(--c2) 0 25%,var(--c1) 0 50%) 
+                calc(.5*var(--s)) 0/calc(2*var(--s)) var(--s);
+            background-attachment: fixed;
+        }
+
+        /* 2. */
+        #recipe-card {
+            background-color: white; /*  */
+            max-width: 650px;        /*  */
+            margin: 60px auto;       /* */
+            padding: 40px;
+            border: 6px double #91204d; /**/
+            border-radius: 15px;
+            font-family: 'Georgia', serif;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+
+        /* 3. ALIGNMENT:  */
+        header, h1 {
+            text-align: center;
+            color: #91204d;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #91204d;
+            border-bottom: 2px solid #f2b4a8;
+            padding-bottom: 5px;
+        }
+
+        /* */
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        /* */
+        .attribution {
+            text-align: center;
+            font-size: 12px;
+            color: #666;
+            margin-top: 8px;
+            margin-bottom: 25px;
+        }
+
+        /*  */
+        ul, ol {
+            line-height: 1.8;
+            margin-bottom: 25px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="recipe-card">
+        
+        <header>
+            <h1>Lara Jean's "Love Letter" Cherry Turnovers</h1>
+        </header>
+
+        <img src="https://live.staticflickr.com/65535/49250756052_12901499b5_b.jpg" width="90%" height="auto" alt="Flaky golden brown cherry turnovers dusted with sugar">
+        
+        <p class="attribution">"Cherry Turnover DSC05996" by kurmanstaff is licensed under CC BY 2.0.</p>
+
+        <p><em>"I'd rather make my boo cake than get a bouquet."</em> - Lara Jean</p>
+
+        <h2>Ingredients</h2>
+        <ul>
+            <li>1 sheet frozen puff pastry (thawed)</li>
+            <li>1 cup cherry pie filling</li>
+            <li>1 egg (lightly beaten for egg wash)</li>
+            <li>1/4 teaspoon almond extract</li>
+            <li>Coarse sugar for sprinkling</li>
+        </ul>
+
+        <h2>Instructions</h2>
+        <ol>
+            <li>Preheat your oven to 400°F and line a pan with parchment paper.</li>
+            <li>Cut puff pastry into four equal squares.</li>
+            <li>Mix the cherry filling with almond extract.</li>
+            <li>Place a spoonful of filling on each square, fold into a triangle, and seal edges with a fork.</li>
+            <li>Brush with egg wash and sprinkle with sugar.</li>
+            <li>Bake for 18 minutes or until puffed and golden brown.</li>
+        </ol>
+
+        <hr>
+        <p><strong>Background:</strong> Inspired by the <em>To All the Boys I've Loved Before</em> series, these turnovers are a classic Covey sister favorite.</p>
+
+    </div>
+
+</body>
+</html>
